@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <title>Converta</title>
+</head>
+<body>
+    <!-- site header -->
+    <header class="site__header relative">
+        <div class="max-w-container mx-auto">
+            <div class="header__wrapper flex justify-between items-center py-[30px] px-[10px] md:px-5 xl:px-0">
+                <!-- site logo -->
+                <a href="#">
+                    <img class="w-[181px]" src="../images/logo.webp" alt="site logo">
+                </a>
+
+                <div class="flex gap-[45px] items-center">
+                    <!-- primary menu -->
+                    <nav class="hidden lg:block">
+                        <ul class="flex gap-[30px] font-spacegrotesk font-medium text-white text-base leading-[1]">
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Home <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">About Us</a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Pages <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Features <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Blog <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- toggle button -->
+                    <div id="menu_btn" class="block lg:hidden absolute right-[10px]">
+                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white">
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </div>
+                    <!-- mobile menu -->
+                    <nav class="block lg:hidden">
+                        <ul id="mobile_menu" class="absolute top-0 right-0 menu_transform space-y-3 p-5 mt-10 font-spacegrotesk font-medium text-white text-base leading-[1] bg-neonblue w-screen h-screen">
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Home <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">About Us</a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Pages <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Features <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Blog <i class="fa-solid fa-angle-down ml-[9px]"></i></a></li>
+                            <li><a class="hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+
+    <section class="hero__sec mt-[-222px] bg-[url('../images/hero-bg.png')] bg-cover bg-no-repeat bg-top">
+        <div class="max-w-container mx-auto">
+            <div class="hero__wrapper pt-[272px] pb-[138px] pl-[10px] xl:pl-5 px-[10px] md:px-5 xl:px-0">
+                <h1 class="font-dmsans font-bold text-3xl md:5xl lg:text-7xl text-white leading-8 md:leading-10 lg:leading-[72px] w-full md:max-w-[430px] lg:max-w-[784px] mb-[25px] tracking-0 lg:tracking-[-3px]">A Design & Branding Agency in <span class="bg-gradient-to-r from-tropicalindigo to-lavenderpink text-transparent bg-clip-text">New York</span>.</h1>
+                <p class="font-dmsans font-normal text-lg text-platinum leading-7 w-full md:max-w-[430px] lg:max-w-[670px] mb-14">We're a digital product and UX agency in New York City. Strategy, design, and development across all platforms. Digital products that people love to use.</p>
+                <div class="flex gap-[15px] items-center">
+                    <!-- get started button -->
+                    <a class="w-[154px] h-[58px] bg-neonblue font-dmsans font-medium text-base text-white leading-5 inline-flex items-center justify-center rounded-[5px] hover:bg-tropicalindigo hover:transition delay-75 duration-300 ease-in-out" href="#">Get Started</a>
+                    <!-- video start button -->
+                    <div class="flex gap-2 items-center">
+                        <a class="h-[58px] w-[58px] animate-bounce bg-white inline-flex items-center justify-center rounded-full" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                <path d="M4.85327 3.13011L16.5199 10.6301L4.85327 18.1301V3.13011Z" fill="#857FFF"></path>
+                            </svg>
+                        </a>
+                        <p class="font-dmsans font-normal text-white text-lg leading-[28px]"><a href="#">How It Works</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand story sec -->
+    <!-- bs 'brand story' -->
+    <section class="bs__sec relative">
+        <div class="max-w-container mx-auto">
+            <!-- arrow down -->
+            <div class="w-[84px] mx-auto mt-[-75px] relative">
+                <a class="w-[84px] h-[84px] inline-flex items-center justify-center bg-xanthous rounded-full" href="#">
+                    <i class="fa-solid fa-arrow-down text-[28px]"></i>
+                </a>
+            </div>
+            <div class="bs__wrapper pt-16 md:pt-[125px] pb-14 md:pb-[223px]  px-[10px] md:px-5 xl:px-0">
+                <h2 class="font-dmsans font-bold text-2xl md:text-3xl lg:text-5xl text-delftblue leading-8 md:leading-[56px] tracking-0 md:tracking-[-2px] text-center mb-5">Websites that tell your brand's story</h2>
+                <p class="font-dmsans font-normal text-coolgray text-lg leading-[28px] max-w-[590px] mx-auto text-center mb-10 lg:mb-[90px]">We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption.</p>
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-0 justify-between items-start lg:items-center">
+                    <!-- image side -->
+                    <div class="bs__img md:w-[50%] lg:max-w-[370px] mx-auto md:ml-0 relative">
+                        <a href="#">
+                            <img class="w-full rounded-[40px]" src="../images/bs-image.webp" alt="">
+                        </a>
+                        <div class="w-[200px] h-[186.5px] bg-neonblue rounded-[40px] inline-flex justify-center items-center bg-[url('../images/bg-imge.png')] absolute bottom-12 lg:bottom-20 right-[75px] lg:right-[-100px]">
+                            <div>
+                                <h4 class="font-spacegrotesk font-bold text-[64px] text-lavenderpink leading-[49px] text-center">24+</h4>
+                                <p class="font-dmsans font-bold text-[19px] text-white leading-[48px] text-center">Startups created</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content side -->
+                    <div class="md:w-[50%] lg:max-w-[560px]">
+                        <h3 class="font-dmsans font-bold text-delftblue text-2xl lg:text-4xl leading-8 lg:leading-[46px] mb-[30px]  tracking-[-0.8px]">We're design-focused across every touchpoint or interaction</h3>
+                        <p class="font-dmsans font-normal text-coolgray text-lg leading-[28px] mb-[60px]">Everything we do and dream up has a solid design impact.We create human-centered enterprise software that has the polished, snappy feel of the best consumer apps.</p>
+                        <div class="flex justify-between">
+                            <div class="max-w-[250px]">
+                                <a class="w-[70px] h-[70px] bg-[#4c6fff2e] rounded-[50px] inline-flex items-center justify-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        </path><path d="M2 2L9.586 9.586" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 13C12.1046 13 13 12.1046 13 11C13 9.89543 12.1046 9 11 9C9.89543 9 9 9.89543 9 11C9 12.1046 9.89543 13 11 13Z" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                                <h5 class="font-dmsans font-bold text-[22px] text-delftblue leading-[32px] tracking-[-0.3px] mt-[28px] mb-[15px]">UI/UX Design</h5>
+                                <p class="font-dmsans font-normal text-lg text-coolgray leading-[28px]">We design digital products used by millions of people.</p>
+                            </div>
+                            <div class="max-w-[250px]">
+                                <a class="w-[70px] h-[70px] bg-[#4c6fff2e] rounded-[50px] inline-flex items-center justify-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M2 8H18V17C18 18.0609 17.5786 19.0783 16.8284 19.8284C16.0783 20.5786 15.0609 21 14 21H6C4.93913 21 3.92172 20.5786 3.17157 19.8284C2.42143 19.0783 2 18.0609 2 17V8Z" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 1V4" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 1V4" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 1V4" stroke="#857FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                                <h5 class="font-dmsans font-bold text-[22px] text-delftblue leading-[32px] tracking-[-0.3px] mt-[28px] mb-[15px]">Development</h5>
+                                <p class="font-dmsans font-normal text-lg text-coolgray leading-[28px]">We design digital products used by millions of people.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hidden md:block absolute md:top-[620px] lg:top-[745px] left-[10px]">
+                <a href="#">
+                    <img src="../images/bg-1.webp" alt="">
+                </a>
+            </div>
+            <div class="hidden md:block absolute bottom-[120px] right-2">
+                <a href="#">
+                    <img src="../images/bg-2.webp" alt="">
+                </a>
+            </div> -->
+            <!-- background colored img -->
+            <div class="absolute top-[120px] left-0">
+                <img src="../images/story.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- creative team sec -->
+    <!-- ct 'creative team' -->
+
+    <section class="ct__sec mt-[-95px] bg-[url('../images/bg-creativeteam.webp')] bg-cover bg-no-repeat bg-center">
+        <div class="max-w-container mx-auto">
+            <div class="ct__wrapper py-40 lg:py-[188px] xl:pt-[188px] xl:pb-[200px] px-[10px] md:px-5 xl:px-0">
+                <p class="font-dmsans font-medium text-sm text-coolgray uppercase leading-6 tracking-[-0.3px] mb-[6px] text-center md:text-left">BRINGING LOGIC TO DESIGN WITH A SPIRIT OF CURIOSITY AND EXCITEMENT</p>
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-0 justify-between md:items-center mb-10 lg:mb-24 items-center">
+                    <h2 class="font-dmsans font-bold text-delftblue text-2xl lg:text-[42px] leading-8 lg:leading-[50px]">A team of creative designers & strategists</h2>
+                    <a class="w-[150px] h-[58px] bg-neonblue font-dmsans font-medium text-base text-white leading-5 inline-flex items-center justify-center rounded-[5px] hover:bg-persianindigo hover:transition delay-75 duration-300 ease-in-out" href="#">Learn More</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[30px] ">
+                    <div class="card max-w-[380px] bg-white shadow-xl rounded-[40px] hover:drop-shadow-xl hover:transition duration-150 delay-300 ease-in-out">
+                        <div class="flex gap-[25px] px-[30px] pt-10 pb-10">
+                            <div class="w-[70px]">
+                                <a class="w-[70px] h-[70px] bg-neonblue rounded-full inline-flex items-center justify-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 2L9.586 9.586" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 13C12.1046 13 13 12.1046 13 11C13 9.89543 12.1046 9 11 9C9.89543 9 9 9.89543 9 11C9 12.1046 9.89543 13 11 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="font-dmsans font-bold text-[22px] text-delftblue leading-8 tracking-[-0.4px] mb-3">Brandings</h3>
+                                <p class="font-dmsans font-normal text-base text-coolgray leading-[26px] mb-[18px]">See your authentic mission, and values come to life with a unique brand image</p>
+                                <!-- learn more button -->
+                                <a class="font-dmsans font-medium text-lg text-coolgray leading-7 hover:text-neonblue" href="#">learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[380px] bg-white shadow-xl rounded-[40px] hover:drop-shadow-xl hover:transition duration-150 delay-300 ease-in-out">
+                        <div class="flex gap-[25px] px-[30px] pt-10 pb-10">
+                            <div class="w-[70px]">
+                                <a class="w-[70px] h-[70px] bg-xanthous rounded-full inline-flex items-center justify-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="font-dmsans font-bold text-[22px] text-delftblue leading-8 tracking-[-0.4px] mb-3">Strategy</h3>
+                                <p class="font-dmsans font-normal text-base text-coolgray leading-[26px] mb-[18px]">See your authentic mission, and values come to life with a unique brand image</p>
+                                <!-- learn more button -->
+                                <a class="font-dmsans font-medium text-lg text-coolgray leading-7 hover:text-neonblue" href="#">learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[380px] bg-white shadow-xl rounded-[40px] hover:drop-shadow-xl hover:transition duration-150 delay-300 ease-in-out">
+                        <div class="flex gap-[25px] px-[30px] pt-10 pb-10">
+                            <div class="w-[70px]">
+                                <a class="w-[70px] h-[70px] bg-tiffanyblue rounded-full inline-flex items-center justify-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 21V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 9H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                </a>
+                            </div>
+                            <div>
+                                <h3 class="font-dmsans font-bold text-[22px] text-delftblue leading-8 tracking-[-0.4px] mb-3">User Experience</h3>
+                                <p class="font-dmsans font-normal text-base text-coolgray leading-[26px] mb-[18px]">See your authentic mission, and values come to life with a unique brand image</p>
+                                <!-- learn more button -->
+                                <a class="font-dmsans font-medium text-lg text-coolgray leading-7 hover:text-neonblue" href="#">learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- happy customers sec -->
+    <!-- hc 'happy customer' -->
+
+    <section class="hc__sec mt-[-90px] mb-[-35px] bg-[url('../images/3k-bg.png')] bg-left-top  bg-no-repeat relative">
+        <div class="max-w-container mx-auto">
+            <div class="hc__wrapper pt-10 md:pt-[100px] lg:pt-[180px] pb-28 lg:pb-[185px] px-[10px] md:px-5 xl:px-0">
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-0 justify-between items-center mb-16 md:mb-40">
+                    <!-- image side -->
+                    <div class="md:w-[50%] lg:w-[40%] xl:max-w-[474px] relative">
+                        <a href="#">
+                            <img class="w-full rounded-[40px]" src="../images/img.webp" alt="">
+                        </a>
+                        <div class="w-[200px] h-[186.5px] bg-xanthous rounded-[40px] inline-flex justify-center items-center bg-[url('../images/bg-imge.png')] absolute bottom-[-50px] lg:bottom-[105px] xl:bottom-[205px] right-[75px] lg:right-[-100px]">
+                            <div>
+                                <h4 class="font-spacegrotesk font-bold text-[64px] text-white leading-[49px] text-center">3K</h4>
+                                <p class="font-dmsans font-bold text-[19px] text-white leading-[48px] text-center">Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content side -->
+                    <div class="md:w-[50%] lg:w-[45%] xl:max-w-[485px] pt-[72px]">
+                        <h2 class="font-dmsans font-bold text-delftblue text-2xl lg:text-4xl leading-8 lg:leading-[46px] mb-[30px]  tracking-[-0.8px]">Augment your brand, and heighten your business</h2>
+                        <p class="font-dmsans font-normal text-coolgray text-lg leading-[28px] mb-[70px]">Identify your authentic brand & shop elements through an in-depth exploration, receive unique strategies to clarify your vision, strengthen differentiation, and prime your company for growth.</p>
+                        <!-- get started button -->
+                        <a class="w-[154px] h-[58px] bg-neonblue font-dmsans font-medium text-base text-white leading-5 inline-flex items-center justify-center rounded-[5px] hover:bg-persianindigo hover:transition delay-75 duration-300 ease-in-out" href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="hc__sec__gd grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[30px]">
+                    <div class="max-w-[380px] rounded-[40px] border border-platinum  bg-white">
+                        <div class="p-10">
+                            <div class="flex gap-[14px] mb-6">
+                                <a class="w-[80px] h-[80px] rounded-full" href="#">
+                                    <img src="../images/testimonial-img.webp" alt="">
+                                </a>
+                                <div>
+                                    <h4 class="font-dmsans font-bold text-delftblue text-base leading-[26px] tracking-[-0.36px]">Ernest Smith</h4>
+                                    <p class="font-dmsans font-normal text-base text-coolgray leading-7 text-opacity-[0.7] mb-[10px]">Developer at Unixity</p>
+                                    <svg width="95" height="13" viewBox="0 0 95 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.82 12.78L6.68 10.7L2.53 12.74L3.23 8.17L0 4.84L4.57 4.1L6.73 0L8.85 4.12L13.42 4.9L10.16 8.2L10.82 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M31.2099 12.78L27.0699 10.7L22.9099 12.74L23.6199 8.17L20.3899 4.84L24.9599 4.1L27.1199 0L29.2399 4.12L33.8099 4.9L30.5499 8.2L31.2099 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M51.59 12.78L47.46 10.7L43.3 12.74L44 8.17L40.77 4.84L45.34 4.1L47.5 0L49.62 4.12L54.19 4.9L50.93 8.2L51.59 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M71.9799 12.78L67.8399 10.7L63.6799 12.74L64.3899 8.17L61.1599 4.84L65.7299 4.1L67.8899 0L70.0099 4.12L74.5799 4.9L71.3099 8.2L71.9799 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M92.36 12.78L88.22 10.7L84.07 12.74L84.77 8.17L81.54 4.84L86.11 4.1L88.27 0L90.39 4.12L94.96 4.9L91.7 8.2L92.36 12.78Z" fill="#FFBB00"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="font-dmsans font-normal text-coolgray text-lg leading-7 mb-1">"Outstanding dedication to excellence, exceptional support received. Impressive service!"</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[380px] rounded-[40px] border border-platinum bg-white">
+                        <div class="p-10">
+                            <div class="flex gap-[14px] mb-6">
+                                <a class="w-[80px] h-[80px] rounded-full" href="#">
+                                    <img src="../images/test-2.webp" alt="">
+                                </a>
+                                <div>
+                                    <h4 class="font-dmsans font-bold text-delftblue text-base leading-[26px] tracking-[-0.36px]">Stella Smith</h4>
+                                    <p class="font-dmsans font-normal text-base text-coolgray leading-7 text-opacity-[0.7] mb-[10px]">Engineer at Unify</p>
+                                    <svg width="95" height="13" viewBox="0 0 95 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.82 12.78L6.68 10.7L2.53 12.74L3.23 8.17L0 4.84L4.57 4.1L6.73 0L8.85 4.12L13.42 4.9L10.16 8.2L10.82 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M31.2099 12.78L27.0699 10.7L22.9099 12.74L23.6199 8.17L20.3899 4.84L24.9599 4.1L27.1199 0L29.2399 4.12L33.8099 4.9L30.5499 8.2L31.2099 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M51.59 12.78L47.46 10.7L43.3 12.74L44 8.17L40.77 4.84L45.34 4.1L47.5 0L49.62 4.12L54.19 4.9L50.93 8.2L51.59 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M71.9799 12.78L67.8399 10.7L63.6799 12.74L64.3899 8.17L61.1599 4.84L65.7299 4.1L67.8899 0L70.0099 4.12L74.5799 4.9L71.3099 8.2L71.9799 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M92.36 12.78L88.22 10.7L84.07 12.74L84.77 8.17L81.54 4.84L86.11 4.1L88.27 0L90.39 4.12L94.96 4.9L91.7 8.2L92.36 12.78Z" fill="#FFBB00"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="font-dmsans font-normal text-coolgray text-lg leading-7 mb-1">"Expertise made all the difference, absolute pleasure to work with. Exceeded our expectations."</p>
+                        </div>
+                    </div>
+                    <div class="max-w-[380px] rounded-[40px] border border-platinum bg-white">
+                        <div class="p-10">
+                            <div class="flex gap-[14px] mb-6">
+                                <a class="w-[80px] h-[80px] rounded-full" href="#">
+                                    <img src="../images/test-3.webp" alt="">
+                                </a>
+                                <div>
+                                    <h4 class="font-dmsans font-bold text-delftblue text-base leading-[26px] tracking-[-0.36px]">Thomas Smith</h4>
+                                    <p class="font-dmsans font-normal text-base text-coolgray leading-7 text-opacity-[0.7] mb-[10px]">Designer at Converta</p>
+                                    <svg width="95" height="13" viewBox="0 0 95 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.82 12.78L6.68 10.7L2.53 12.74L3.23 8.17L0 4.84L4.57 4.1L6.73 0L8.85 4.12L13.42 4.9L10.16 8.2L10.82 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M31.2099 12.78L27.0699 10.7L22.9099 12.74L23.6199 8.17L20.3899 4.84L24.9599 4.1L27.1199 0L29.2399 4.12L33.8099 4.9L30.5499 8.2L31.2099 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M51.59 12.78L47.46 10.7L43.3 12.74L44 8.17L40.77 4.84L45.34 4.1L47.5 0L49.62 4.12L54.19 4.9L50.93 8.2L51.59 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M71.9799 12.78L67.8399 10.7L63.6799 12.74L64.3899 8.17L61.1599 4.84L65.7299 4.1L67.8899 0L70.0099 4.12L74.5799 4.9L71.3099 8.2L71.9799 12.78Z" fill="#FFBB00"></path>
+                                        <path d="M92.36 12.78L88.22 10.7L84.07 12.74L84.77 8.17L81.54 4.84L86.11 4.1L88.27 0L90.39 4.12L94.96 4.9L91.7 8.2L92.36 12.78Z" fill="#FFBB00"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="font-dmsans font-normal text-coolgray text-lg leading-7 mb-1">"I highly recommend this agency. Testing for our project was done everything top-notch"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- background imgaes -->
+            <!-- <div class="hidden lg:block absolute md:top-2 lg:top-[5px] xl:top-[135px] md:left-[-15px] lg:left-1">
+                <a href="#">
+                    <img src="../images/bg-3.webp" alt="">
+                </a>
+            </div>
+            <div class="hidden md:block absolute md:top-[515px] lg:top-[560px] xl:top-[675px] lg:left-[415px] left-[650px]">
+                <a href="#">
+                    <img src="../images/bg-4.webp" alt="">
+                </a>
+            </div> -->
+            <div class="hc__sec__img hidden md:block absolute md:bottom-[126px] xl:bottom-[83px] left-0">
+                <a href="#">
+                    <img src="../images/bg-9.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- client success story -->
+    <!-- css 'client success story' -->
+    <section class="css__sec bg-[#f8fafc] bg-[url('../images/bg-bg.png')] bg-no-repeat bg-left-top relative">
+        <div class="max-w-container mx-auto">
+            <div class="css__wrapper pt-28 md:pt-[155px] pb-28 md:pb-[155px] px-[10px] md:px-5 xl:px-0">
+                <h2 class="font-dmsans font-bold text-2xl lg:text-4xl text-delftblue text-center leading-8 lg:leading-[46px] tracking-[-0.8px] mb-10 lg:mb-20 max-w-[848px] mx-auto">Explore our recent client success stories and witness our full 360 transformations come to life</h2>
+                <!-- first two images -->
+                <div class="flex flex-col lg:flex-row gap-[30px] xl:gap-0 justify-between mb-[30px]">
+                    <div>
+                        <a href="#"> 
+                            <img class="w-full rounded-[40px]" src="../images/story-img.webp" alt="">
+                        </a>
+                        <h3 class="font-dmsans font-bold text-[22px] text-delftblue tracking-[-0.4px] leading-8 mt-[30px] hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out"><a href="#">UX/UI Design</a></h3>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="w-full rounded-[40px]" src="../images/story-2.webp" alt="">
+                        </a>
+                        <h3 class="font-dmsans font-bold text-[22px] text-delftblue tracking-[-0.4px] leading-8 mt-[30px] hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out"><a href="#">NFT Market UI</a></h3>
+                    </div>
+                </div>
+                <!-- second two images -->
+                <div class="flex flex-col lg:flex-row gap-[30px] xl:gap-0 justify-between">
+                    <div>
+                        <a href="#">
+                            <img class="w-full rounded-[40px]" src="../images/story-3.webp" alt="">
+                        </a>
+                        <h3 class="font-dmsans font-bold text-[22px] text-delftblue tracking-[-0.4px] leading-8 mt-[30px] hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out"><a href="#">Health Mobile App</a></h3>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="w-full rounded-[40px]" src="../images/story-4.webp" alt="">
+                        </a>
+                        <h3 class="font-dmsans font-bold text-[22px] text-delftblue tracking-[-0.4px] leading-8 mt-[30px] hover:text-neonblue hover:transition delay-75 duration-300 ease-in-out"><a href="#">Wallet App Development</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bg-second img -->
+        <div class="absolute top-36 right-0">
+            <img src="../images/bg-imgsedd.png" alt="">
+        </div>
+    </section>
+
+    <!-- New project sec-->
+    <!-- np 'New Project' -->
+
+    <section class="np__sec relative">
+        <div class="max-w-container mx-auto">
+            <div class="np__wrapper pt-8 lg:pt-20 pb-[140px] flex flex-col md:flex-row gap-5 lg:gap-0 justify-between items-center px-[10px] md:px-5 xl:px-0">
+                <!-- content side -->
+                <div class="md:w-[50%] lg:w-[45%] xl:max-w-[485px] pt-[72px]">
+                    <h2 class="font-dmsans font-bold text-delftblue text-2xl lg:text-4xl leading-8 lg:leading-[46px] mb-[30px] tracking-[-0.8px] text-center md:text-left">Ready to get started with your new project today?</h2>
+                    <p class="font-dmsans font-normal text-coolgray text-lg leading-[28px] mb-[60px] text-center md:text-left"> Identify your authentic brand & shop elements through an in-depth exploration, receive unique strategies to clarify your vision, strengthen differentiation, and prime your company for growth.</p>
+                    <form  class="flex flex-row justify-center" action="">
+                        <input class="w-[250px] lg:w-[358px] h-14 px-[22px] placeholder:text-lg placeholder:text-[#12022f] placeholder:leading-7 placeholder:font-dmsans placeholder:font-normal bg-[#f4f3f6] rounded-l-[5px] outline-none" type="email" placeholder="Your email address">
+                        <input class="w-[100px] lg:w-[126px] h-14 bg-neonblue text-white text-lg leading-7 font-dmsans font-medium  hover:bg-persianindigo hover:transition delay-75 duration-300 ease-in-out" type="submit" value="Sign Up">
+                    </form>
+                </div>
+                <!-- image side -->
+                <div class="np__img md:w-[50%] lg:w-[40%] xl:max-w-[470px] relative">
+                    <a href="#">
+                        <img class="w-full rounded-[40px]" src="../images/projects-img.webp" alt="">
+                    </a>
+                    <div class="w-[200px] h-[186.5px] bg-neonblue rounded-[40px] inline-flex justify-center items-center bg-[url('../images/bg-imge.png')] absolute bottom-[-50px] lg:bottom-[105px] xl:bottom-[205px] left-[75px] lg:left-[-100px]">
+                        <div>
+                            <h4 class="font-spacegrotesk font-bold text-[64px] text-lavenderpink leading-[49px] text-center">150</h4>
+                            <p class="font-dmsans font-bold text-[19px] text-white leading-[48px] text-center">Projects in 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- background images -->
+            <div class="hidden lg:block absolute top-[87px] left-[75px]">
+                <a href="#">
+                    <img src="../images/bg-5.webp" alt="">
+                </a>
+            </div>
+            <div class="hidden lg:block absolute top-[205px] left-[630px]">
+                <a href="#">
+                    <img src="../images/bg-6.webp" alt="">
+                </a>
+            </div>
+            <div class="hidden lg:block absolute top-[205px] left-[630px]">
+                <a href="#">
+                    <img src="../images/bg-6.webp" alt="">
+                </a>
+            </div>
+            <!-- <div class="hidden lg:block absolute lg:bottom-[50px] xl:bottom-[172px] left-[605px]">
+                <a href="#">
+                    <img src="../images/bg-7.webp" alt="">
+                </a>
+            </div>
+            <div class="hidden lg:block absolute lg:bottom-[20px] xl:bottom-[185px] right-3">
+                <a href="#">
+                    <img src="../images/bg-8.webp" alt="">
+                </a>
+            </div> -->
+            <!-- colored bg-img -->
+            <div class="absolute top-[400px] xl:top-[-246px] right-0 xl:right-[-200px]">
+                <img src="../images/last-bg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="site__footer bg-[url('../images/footer-bg.webp')] bg-center bg-no-repeat bg-cover">
+        <div class="max-w-container mx-auto">
+            <div class="footer__wrapper flex flex-col md:flex-row gap-7 md:gap-5 lg:gap-0 justify-between pt-20 pb-[75px] border-b border-[#61779833] px-[10px] md:px-5 xl:px-0">
+                <div class="md:w-[40%] lg:max-w-[300px] xl:max-w-[470px] md:pr-10 lg:pr-0">
+                    <a href="#">
+                        <img class="mx-auto md:ml-0" src="../images/footer-logo.webp" alt="site logo">
+                    </a>
+                    <p class="font-dmsans font-normal text-sm text-platinum leading-[26px] mt-8 text-center md:text-left">Creative-powered to fuel your growth goals. We build world-class digital products, software and branding.</p>
+                </div>
+                <div class="md:w-[60%] lg:max-w-[600px] flex flex-col md:flex-row justify-between gap-[30px]">
+                    <div class="w-full md:w-[180px]">
+                        <h3 class="font-dmsans font-bold text-white text-sm leading-[26px] mb-4 text-center md:text-left">Products</h3>
+                        <ul class="font-dmsans font-normal text-sm text-platinum leading-[26px] flex flex-col items-center md:items-start gap-3">
+                            <li><a href="#">Unify App</a></li>
+                            <li><a href="#">Page Builder</a></li>
+                            <li><a href="#">Templates</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-[180px]">
+                        <h3 class="font-dmsans font-bold text-white text-sm leading-[26px] mb-4 text-center md:text-left">Resources</h3>
+                        <ul class="font-dmsans font-normal text-sm text-platinum leading-[26px] flex flex-col items-center md:items-start gap-3">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-[180px]">
+                        <h3 class="font-dmsans font-bold text-white text-sm leading-[26px] mb-4 text-center md:text-left">Support</h3>
+                        <ul class="font-dmsans font-normal text-sm text-platinum leading-[26px] flex flex-col items-center md:items-start gap-3">
+                            <li><a href="#">Documentaion</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Video Guides</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-3 pb-20 flex flex-col md:flex-row items-center gap-5 md:gap-0 justify-between px-[10px] md:px-5 xl:px-0">
+                <p class="font-dmsans font-normal text-sm text-platinum leading-7 text-center md:text-left">© 2023 Converta Theme. Codeless, LLC. San Francisco, California. USA.</p>
+                <div class="flex gap-[22px]">
+                    <a href="#"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    <a href="#"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                    <a href="#"><svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const button = document.getElementById('menu_btn')
+    const mobile_nav = document.getElementById('mobile_menu')
+      
+    button.addEventListener('click', function(){
+        mobile_nav.classList.toggle('menu_transform')
+      })
+</script>
+</html>

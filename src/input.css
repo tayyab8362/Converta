@@ -1,0 +1,133 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+/* for showing after using clip path */
+.site__header{
+    z-index: 1;
+}
+.menu_transform{
+    display: none;
+}
+#menu_btn{
+    z-index: 1;
+}
+
+.hero__sec{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 75% 100%, 23% 92%, 0 88%, 0 0);
+}
+.bs__wrapper::before{
+    content: url('../images/bg-1.webp');
+    position: absolute;
+    left: 10px;
+    top: 725px;
+}
+.bs__wrapper::after{
+    content: url('../images/bg-2.webp');
+    position: absolute;
+    bottom: 200px;
+    right: 8px;
+}
+.hc__wrapper::before{
+    content: url('../images/bg-3.webp');
+    position: absolute;
+    left: 4px;
+    top: 135px;
+}
+.hc__wrapper::after{
+    content: url('../images/bg-4.webp');
+    position: absolute;
+    left: 650px;
+    top: 735px;
+}
+.np__wrapper::before{
+    content: url('../images/bg-7.webp');
+    position: absolute;
+    bottom: 165px;
+    left: 605px;
+}
+.np__wrapper::after{
+    content: url('../images/bg-8.webp');
+    position: absolute;
+    bottom: 185px;
+    right: 12px;
+}
+.css__sec{
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+}
+.css__wrapper{
+    z-index: 1;
+}
+.bs__img{
+    z-index: 1;
+}
+.np__img{
+    z-index: 1;
+}
+.hc__sec__gd{
+    z-index: 1;
+    position: relative;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 767px) {
+    .bs__wrapper::before{
+       display: none;
+    }
+    .bs__wrapper::after{
+        display: none;
+    }
+    .hc__wrapper::before{
+        display: none;
+    }
+    .hc__wrapper::after{
+        display: none;
+    }
+    .np__wrapper::before{
+        display: none;
+    }
+    .np__wrapper::after{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .bs__wrapper::before{
+        left: 10px;
+        top: 80px;
+    }
+    .hc__wrapper::before{
+        display: none;
+    }
+    .hc__wrapper::after{
+        left: 550px;
+        top: 550px;
+    }
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+    .bs__wrapper::before{
+        left: 10px;
+        top: 80px;
+    }
+    .hc__wrapper::after{
+        left: 410px;
+        top: 642px;
+    }
+    .np__wrapper::before{
+        left:425px ;
+        bottom: 110px;
+    }
+
+}
